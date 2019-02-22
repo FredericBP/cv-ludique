@@ -1,0 +1,74 @@
+body {
+    background: $color3;
+    border: 15px solid $color1;
+    color: $color4;
+    font-family: $font2;
+    font-size: 17px;
+    
+    &:before, &:after {
+        background: $color1;
+        content: "";
+        height: 15px;
+        left: 0;
+        position: fixed;
+        right: 0;
+        z-index: 10;
+    }
+    
+    &:before {
+        top: 0;
+    }
+    
+    &:after {
+        bottom: 0;
+    }
+}
+
+h1, h2 {
+    font-family: $font1;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+ul {
+    margin: 0;
+    -webkit-padding-start: 0px;
+}
+
+li {
+    padding: 5px 0;
+}
+
+
+/* BOUTON HAUT DE PAGE */
+#hautDePage {
+    border:1px solid $color1;
+	border-color: transparent $color1 $color1 transparent;
+	border-width: 40px;
+    bottom: 15px;
+    display: none;
+    height: 1px;
+    position: fixed;
+    right: 15px;
+    width: 1px;
+}
+
+#hautDePageLien {
+    bottom: -38px;
+    color: $color6;
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    height: 45px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    right: -38px;
+    transform: rotate(-90deg);
+    width: 45px;
+}

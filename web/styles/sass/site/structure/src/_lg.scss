@@ -1,0 +1,91 @@
+@media (min-width : 1024px) and (max-width : 1259px) {
+    header {
+        min-height: 50px;
+        padding: 5px;
+        
+        .flex1 {
+            margin: 0 auto;
+            max-width: 960px;
+        }
+        
+        /* MENU1 (BOUTON HAMBURGER) - LOGO - MENU0 (LANGUES) */
+        #nav-icon1 {
+            display: none;
+        }
+        
+        .flex2 {
+            align-items: center;
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            
+            img {
+                height: 50px;
+                vertical-align: middle;
+            }
+        }
+        
+        /* MENU 1 (PRINCIPAL) */
+        #menu1 {
+            height: 30px;
+            margin: 5px 0;
+            
+            ul {
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+                margin: 0 125px;
+            }
+            
+            li {
+                color: $color6;
+                display: block;
+                font-size: 1.3em;
+                padding: 0;
+                width: 150px;
+            }
+        }
+        
+        #menu0 {
+            display: none;
+        }
+    }
+    
+    main {
+        margin: 25px auto;
+        width: 960px;
+    }
+    
+    .flexRealisations {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        section {
+            width: 49%;
+        }
+        
+        section:nth-child(even) {
+            margin-left: 1.1%;
+        }
+    }
+    
+    footer {
+        padding: 5px;
+        
+        p {
+            margin: 25px 0;
+        }
+        
+        ul {
+            display: flex;
+            margin: 25px 0;
+        }
+        
+        .credits {
+            li {
+                margin: 5px;
+            }
+        }
+    }
+}

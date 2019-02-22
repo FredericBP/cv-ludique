@@ -1,0 +1,71 @@
+@media (max-width: 575px) {
+  #menuPrincipal>div:last-child {
+    p {
+      display: none;
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  #parcours1,
+  #ecranAccueil>div:first-child {
+    transform: scale(0.32);
+  }
+
+  #boiteDeDialogue,
+  #tutoriel {
+    border: 3px solid #0070c0;
+    margin: 0 5%;
+    width: 90%;
+
+    div {
+      width: 60%;
+    }
+  
+    p {
+      font-size: 1.1em;
+      line-height: 1.3em;
+    }
+  
+    button {
+      color: #fff;
+      border: 2px solid #0070c0;
+      font-size: 1.1em;
+      margin: 5px;
+      padding: 5px 0;
+      width: 120px;
+    }
+  }
+
+  #boiteDeDialogue {
+    height: 100px;
+  }
+
+  #tutoriel {
+    height: 450px;
+    
+    div {
+      height: 200px;
+      width: 100%;
+    }
+  }
+
+  #ecranReussite {
+    flex-direction: column;
+    font-size: 0.6em;
+    justify-content: space-between;
+
+    &>a {
+      transform: scale(0.5);
+      height: 20%;
+      width: 100%;
+    }
+
+    &>div:last-child {
+      height: 60%;
+      width: 100%;
+    }
+  }
+}

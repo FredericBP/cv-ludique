@@ -1,0 +1,94 @@
+#ecranAccueil {
+  align-items: start;
+  background-color: rgb(253, 249, 236);
+  display: flex;
+  height: calc(100vh - 30px);
+  justify-content: space-around;
+  flex: 0 0 auto;
+  position: relative;
+
+  #imageParcoursAccueil {
+    background: no-repeat url('../files/parcours-1.png');
+    background-size: cover;
+
+    &>div {
+      height: 720px;
+      width: 1280px;
+    }
+  }
+
+  #menuPrincipal {
+    display: none;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    height: calc(100vh - 30px);
+    width: 100%;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    &>div:first-child {
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - 40px);
+      justify-content: space-between;
+      padding: 20px;
+    }
+  
+    &>div:last-child {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+    }
+  
+    h2 {
+      color: $color1;
+      font-size: 2em;
+      text-align: right;
+    }
+  
+    ul {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    
+    li {
+      display: list-item;
+      list-style-type: none;
+      margin: 3% 0;
+      text-align: right;
+    }
+    
+    li a,
+    .commencerPartie {
+      color: $color1;
+      font-size: 2em;
+      text-decoration: none;
+    }
+  
+    li a:hover,
+    .commencerPartie:hover {
+      cursor: pointer;
+    }
+  
+    p {
+      color: $color1;
+      font-size: 1.5em;
+      margin: 0;
+      text-indent: 15px;
+    }
+  
+    img {
+      height: 75px;
+      margin: 15px;
+    }
+  }
+}

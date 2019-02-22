@@ -1,0 +1,1074 @@
+/* STYLE JEU */
+/* BASE DU JEU VIDEO */
+/* RESET AVEC NORMALIZE */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/* VARIABLES SASS */
+/* COULEUR */
+/* FONTS */
+@font-face {
+  font-family: "WeblySleek UI Semilight";
+  src: url(../fonts/weblysleekuisl.ttf); }
+
+@font-face {
+  font-family: "WeblySleek UI Light";
+  src: url(../fonts/weblysleekuil.ttf); }
+
+/* MORCEAUX CV */
+/* MIXIN SASS */
+/* STYLE GLOBAL */
+body {
+  border: 15px solid #0070c0;
+  box-sizing: border-box;
+  font-family: "WeblySleek UI Semilight", "Calibri Light", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+/* MENU DU JEU */
+/* HEADER MENU EN COURS DE PARTIE */
+/* MENU GLOBAL */
+header {
+  background-color: #fafafa;
+  border: 3px solid #0070c0;
+  left: 40px;
+  position: absolute;
+  top: 40px;
+  z-index: 60;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+
+/* MENU OUVERT */
+header.ouvert {
+  height: calc(100vh - 85px);
+  transform: rotate(0deg);
+  transition: 500ms;
+  width: calc(100% - 85px); }
+  header.ouvert ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0; }
+    header.ouvert ul li {
+      display: list-item;
+      list-style-type: none;
+      margin: 3% 0;
+      transition: 1500ms; }
+    header.ouvert ul li a,
+    header.ouvert ul #reprendrePartie,
+    header.ouvert ul .commencerPartie,
+    header.ouvert ul .revenirMenuPrincipal {
+      color: #0070c0;
+      cursor: pointer;
+      font-size: 2.5em;
+      text-decoration: none;
+      transition: 1500ms; }
+    header.ouvert ul li a:hover,
+    header.ouvert ul #reprendrePartie:hover,
+    header.ouvert ul .commencerPartie:hover,
+    header.ouvert ul .revenirMenuPrincipal:hover {
+      cursor: pointer; }
+
+/* MENU FERME */
+header.ferme {
+  height: 60px;
+  transform: rotate(-45deg);
+  transition: 500ms;
+  width: 60px; }
+  header.ferme li {
+    display: none;
+    transition: 1500ms; }
+
+/* BOUTON MENU HAMBURGER POUR LE MENU FERME */
+header div {
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  transform: rotate(45deg);
+  transition: 500ms; }
+  header div span {
+    background-color: #0070c0;
+    border-radius: 2px;
+    height: 4px;
+    position: absolute;
+    width: 40px; }
+  header div span:nth-child(1) {
+    left: 10px;
+    top: 14px; }
+  header div span:nth-child(2) {
+    left: 10px;
+    top: 28px;
+    display: inline;
+    transition: 500ms; }
+  header div span:nth-child(3) {
+    left: 10px;
+    top: 42px; }
+  header div:hover {
+    cursor: pointer; }
+
+/* BOUTON MENU HAMBURGER POUR LE MENU OUVERT */
+header.ouvert div span:nth-child(1) {
+  left: 10px;
+  top: 30px; }
+
+header.ouvert div span:nth-child(2) {
+  display: none;
+  transition: 500ms; }
+
+header.ouvert div span:nth-child(3) {
+  left: 10px;
+  top: 30px;
+  transform: rotate(-90deg);
+  transition: 500ms; }
+
+/* ECRAN D'ACCUEIL */
+/* MENU PRINCIPAL */
+#ecranAccueil {
+  align-items: start;
+  background-color: #fdf9ec;
+  display: flex;
+  height: calc(100vh - 30px);
+  justify-content: space-around;
+  flex: 0 0 auto;
+  position: relative; }
+  #ecranAccueil #imageParcoursAccueil {
+    background: no-repeat url("../files/parcours-1.png");
+    background-size: cover; }
+    #ecranAccueil #imageParcoursAccueil > div {
+      height: 720px;
+      width: 1280px; }
+  #ecranAccueil #menuPrincipal {
+    display: none;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    height: calc(100vh - 30px);
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    #ecranAccueil #menuPrincipal > div:first-child {
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - 40px);
+      justify-content: space-between;
+      padding: 20px; }
+    #ecranAccueil #menuPrincipal > div:last-child {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end; }
+    #ecranAccueil #menuPrincipal h2 {
+      color: #0070c0;
+      font-size: 2em;
+      text-align: right; }
+    #ecranAccueil #menuPrincipal ul {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0; }
+    #ecranAccueil #menuPrincipal li {
+      display: list-item;
+      list-style-type: none;
+      margin: 3% 0;
+      text-align: right; }
+    #ecranAccueil #menuPrincipal li a,
+    #ecranAccueil #menuPrincipal .commencerPartie {
+      color: #0070c0;
+      font-size: 2em;
+      text-decoration: none; }
+    #ecranAccueil #menuPrincipal li a:hover,
+    #ecranAccueil #menuPrincipal .commencerPartie:hover {
+      cursor: pointer; }
+    #ecranAccueil #menuPrincipal p {
+      color: #0070c0;
+      font-size: 1.5em;
+      margin: 0;
+      text-indent: 15px; }
+    #ecranAccueil #menuPrincipal img {
+      height: 75px;
+      margin: 15px; }
+
+/* NIVEAUX DU JEU */
+/* NIVEAUX DE JEU GLOBAL */
+#niveau1 {
+  align-items: start;
+  background-color: #fdf9ec;
+  display: flex;
+  height: calc(100vh - 30px);
+  justify-content: space-around;
+  flex: 0 0 auto; }
+
+/* PARCOURS */
+#parcours1 {
+  background: url("../files/parcours-1a.png");
+  background-size: cover;
+  position: relative;
+  /* @include shadow; */ }
+
+img[src="web/files/parcours-1b.png"] {
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 40; }
+
+#lignes {
+  z-index: 10; }
+
+[id*="case"] {
+  position: absolute;
+  transform: scale(0.7);
+  transition: 500ms;
+  z-index: 20; }
+
+[id*="case"]:hover {
+  transform: scale(1);
+  transition: 500ms; }
+
+/* MORCEAUX DU CV */
+.morceauxCv {
+  bottom: 30px;
+  box-sizing: border-box;
+  height: 639px;
+  left: 30px;
+  position: absolute;
+  transition: 1000ms;
+  width: 428px;
+  z-index: 45;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+  .morceauxCv:hover {
+    cursor: pointer; }
+  .morceauxCv h2 {
+    background-color: #0070c0;
+    color: #fff;
+    font-weight: normal;
+    height: 25px;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 1000ms;
+    width: 100%; }
+  .morceauxCv > div {
+    background-color: #fff;
+    border: 2px solid #0070c0;
+    box-sizing: border-box;
+    height: 604px;
+    position: relative;
+    transition: 1000ms; }
+  .morceauxCv img {
+    display: none;
+    width: 100%; }
+  .morceauxCv img:nth-child(1n+2) {
+    left: 0;
+    position: absolute;
+    bottom: 0; }
+  .morceauxCv img.obtenu {
+    display: inline-block; }
+  .morceauxCv.reduit {
+    box-sizing: border-box;
+    height: 194px;
+    transition: 1000ms;
+    width: 128px; }
+    .morceauxCv.reduit h2 {
+      font-size: 0.9em;
+      height: 15px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 1000ms;
+      width: 100%; }
+    .morceauxCv.reduit > div {
+      box-sizing: border-box;
+      height: 179px;
+      transition: 1000ms;
+      width: 100%; }
+
+/* BOITE DE DIALOGUE */
+#boiteDeDialogue {
+  align-items: center;
+  background-color: #fff;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  z-index: 50;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+  #boiteDeDialogue #nomJoueur {
+    background-color: #0070c0;
+    color: #fff;
+    height: 25px;
+    left: -3px;
+    padding: 2px 0;
+    position: absolute;
+    text-align: center;
+    top: -29px;
+    width: 100px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+  #boiteDeDialogue div {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+  #boiteDeDialogue p {
+    margin: 0;
+    text-align: justify; }
+  #boiteDeDialogue button {
+    background-color: #0070c0;
+    color: #fff; }
+    #boiteDeDialogue button:hover {
+      background-color: #fff;
+      color: #0070c0;
+      cursor: pointer; }
+
+/* TUTORIEL */
+#tutoriel {
+  align-items: center;
+  background-color: #fff;
+  bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  z-index: 50;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+  #tutoriel h3 {
+    color: #0070c0;
+    margin: 10px 0 0;
+    text-align: center;
+    width: 100%; }
+  #tutoriel div {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap; }
+  #tutoriel #clavier {
+    background: url("../files/clavier-touches.png");
+    background-size: cover;
+    height: 150px;
+    margin: 0 auto;
+    width: 264px; }
+  #tutoriel p {
+    border: 2px solid #0070c0;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center; }
+  #tutoriel button {
+    background-color: #0070c0;
+    color: #fff; }
+    #tutoriel button:hover {
+      background-color: #fff;
+      color: #0070c0;
+      cursor: pointer; }
+
+/* INDICATEUR D'EVENEMENT */
+#indicateurEvenement {
+  background-color: #fff;
+  border: 3px solid #0070c0;
+  bottom: 30px;
+  left: calc(50% - 80px);
+  position: absolute;
+  width: 200px;
+  z-index: 48;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+  #indicateurEvenement #clavierEspace {
+    background: url("../files/clavier-espace.png");
+    background-size: cover;
+    height: 35px;
+    margin: 5px auto;
+    width: 150px; }
+  #indicateurEvenement #fouiller {
+    color: #0070c0;
+    margin: 0;
+    padding: 0 5px 5px;
+    text-align: center; }
+
+/* SPRITES DU JEU */
+/* SPRITES DU JOUEUR */
+#personnage {
+  position: absolute;
+  transition: 1000ms;
+  z-index: 30; }
+
+.masque {
+  height: 98px;
+  position: absolute;
+  overflow: hidden;
+  width: 43px; }
+
+.sprite {
+  position: absolute; }
+
+/* OBJECTIFS DU JEU */
+/* OBJECTIFS DU JEU */
+#objectifs {
+  background-color: #fff;
+  border: 3px solid #0070c0;
+  bottom: 30px;
+  box-sizing: border-box;
+  color: #0070c0;
+  display: flex;
+  flex-direction: column;
+  height: 175px;
+  justify-content: space-around;
+  position: absolute;
+  right: 30px;
+  width: 300px;
+  z-index: 40;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+  #objectifs h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5px 0;
+    padding: 0; }
+  #objectifs > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px; }
+  #objectifs p {
+    margin: 0;
+    padding: 0; }
+  #objectifs progress::-moz-progress-bar {
+    background-color: #0070c0;
+    color: #0070c0; }
+  #objectifs progress::-webkit-progress {
+    background-color: #fff; }
+  #objectifs progress::-webkit-progress-value {
+    background-color: #0070c0; }
+  #objectifs progress {
+    background-color: #fff;
+    border: 1px solid #0070c0;
+    color: #0070c0; }
+
+/* ECRAN DE REUSSITE */
+/* ECRAN DE REUSSITE */
+#ecranReussite {
+  align-items: center;
+  background-color: #0070c0;
+  display: flex;
+  height: calc(100vh - 30px);
+  justify-content: space-around;
+  text-align: center; }
+  #ecranReussite > a,
+  #ecranReussite > div {
+    width: 50%; }
+  #ecranReussite > a {
+    width: 428px; }
+  #ecranReussite > div:last-child {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #ecranReussite .morceauxCv {
+    background-color: #fff;
+    border: 2px solid #0070c0;
+    box-sizing: border-box;
+    height: 604px;
+    position: relative;
+    bottom: 0;
+    left: 0; }
+    #ecranReussite .morceauxCv img {
+      display: inline-block; }
+    #ecranReussite .morceauxCv img:nth-child(1n+2) {
+      left: 0;
+      position: absolute;
+      bottom: 0; }
+  #ecranReussite h2 {
+    color: #fff;
+    font-size: 4.5em; }
+  #ecranReussite #scoreReussite {
+    color: #fff;
+    text-align-last: center;
+    text-indent: 20px;
+    width: 100%; }
+    #ecranReussite #scoreReussite p {
+      font-size: 1.6em; }
+    #ecranReussite #scoreReussite p:last-child {
+      font-size: 2em; }
+  #ecranReussite p {
+    color: #fff;
+    font-size: 1.5em; }
+  #ecranReussite ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0; }
+  #ecranReussite li {
+    display: list-item;
+    list-style-type: none;
+    margin: 3% 0; }
+  #ecranReussite li a,
+  #ecranReussite .commencerPartie,
+  #ecranReussite .revenirMenuPrincipal {
+    color: #fff;
+    font-size: 2.5em;
+    text-decoration: none; }
+  #ecranReussite li a:hover,
+  #ecranReussite .commencerPartie:hover,
+  #ecranReussite .revenirMenuPrincipal:hover {
+    cursor: pointer; }
+
+/* ECRAN GAME OVER */
+/* ECRAN GAME OVER */
+#ecranGameOver {
+  align-items: center;
+  background-color: #0070c0;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 30px);
+  justify-content: center;
+  text-align: center;
+  transition: 1000ms;
+  width: 100%; }
+  #ecranGameOver h2 {
+    color: #fff;
+    font-size: 4.5em; }
+  #ecranGameOver p {
+    color: #fff;
+    font-size: 1.5em; }
+  #ecranGameOver ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0; }
+  #ecranGameOver li {
+    display: list-item;
+    list-style-type: none;
+    margin: 3% 0; }
+  #ecranGameOver li a,
+  #ecranGameOver .commencerPartie,
+  #ecranGameOver .revenirMenuPrincipal {
+    color: #fff;
+    font-size: 2.5em;
+    text-decoration: none; }
+  #ecranGameOver li a:hover,
+  #ecranGameOver .commencerPartie:hover,
+  #ecranGameOver .revenirMenuPrincipal:hover {
+    cursor: pointer; }
+
+/* RESPONSIVE DESIGN */
+/* STRUCTURE XS */
+@media (max-width: 575px) {
+  #menuPrincipal > div:last-child p {
+    display: none; }
+  #menuPrincipal > div:last-child img {
+    display: none; }
+  #parcours1,
+  #ecranAccueil > div:first-child {
+    transform: scale(0.32); }
+  #boiteDeDialogue,
+  #tutoriel {
+    border: 3px solid #0070c0;
+    margin: 0 5%;
+    width: 90%; }
+    #boiteDeDialogue div,
+    #tutoriel div {
+      width: 60%; }
+    #boiteDeDialogue p,
+    #tutoriel p {
+      font-size: 1.1em;
+      line-height: 1.3em; }
+    #boiteDeDialogue button,
+    #tutoriel button {
+      color: #fff;
+      border: 2px solid #0070c0;
+      font-size: 1.1em;
+      margin: 5px;
+      padding: 5px 0;
+      width: 120px; }
+  #boiteDeDialogue {
+    height: 100px; }
+  #tutoriel {
+    height: 450px; }
+    #tutoriel div {
+      height: 200px;
+      width: 100%; }
+  #ecranReussite {
+    flex-direction: column;
+    font-size: 0.6em;
+    justify-content: space-between; }
+    #ecranReussite > a {
+      transform: scale(0.5);
+      height: 20%;
+      width: 100%; }
+    #ecranReussite > div:last-child {
+      height: 60%;
+      width: 100%; } }
+
+/* STRUCTURE SM */
+@media (min-width: 576px) and (max-width: 767px) {
+  #menuPrincipal > div:last-child p {
+    display: none; }
+  #menuPrincipal > div:last-child img {
+    display: none; }
+  #parcours1,
+  #ecranAccueil > div:first-child {
+    transform: scale(0.42); }
+  #boiteDeDialogue,
+  #tutoriel {
+    border: 3px solid #0070c0;
+    margin: 0 15%;
+    width: 70%; }
+    #boiteDeDialogue div,
+    #tutoriel div {
+      width: 65%; }
+    #boiteDeDialogue p,
+    #tutoriel p {
+      font-size: 1.1em;
+      line-height: 1.3em; }
+    #boiteDeDialogue button,
+    #tutoriel button {
+      color: #fff;
+      border: 2px solid #0070c0;
+      font-size: 1.1em;
+      margin: 5px;
+      padding: 5px 0;
+      width: 120px; }
+  #boiteDeDialogue {
+    height: 100px; }
+  #tutoriel {
+    height: 450px; }
+    #tutoriel div {
+      height: 200px;
+      width: 100%; }
+  #ecranReussite {
+    flex-direction: column;
+    font-size: 0.6em;
+    justify-content: space-between; }
+    #ecranReussite > a {
+      transform: scale(0.6);
+      height: 20%;
+      width: 100%; }
+    #ecranReussite > div:last-child {
+      height: 60%;
+      width: 100%; } }
+
+/* STRUCTURE MD */
+@media (min-width: 768px) and (max-width: 991px) {
+  #menuPrincipal > div:last-child {
+    width: 40%; }
+  #parcours1,
+  #ecranAccueil > div:first-child {
+    transform: scale(0.57); }
+  #boiteDeDialogue,
+  #tutoriel {
+    border: 3px solid #0070c0;
+    margin: 0 20%;
+    width: 60%; }
+    #boiteDeDialogue div,
+    #tutoriel div {
+      width: 65%; }
+    #boiteDeDialogue p,
+    #tutoriel p {
+      font-size: 1.1em;
+      line-height: 1.3em; }
+    #boiteDeDialogue button,
+    #tutoriel button {
+      color: #fff;
+      border: 2px solid #0070c0;
+      font-size: 1.1em;
+      margin: 5px;
+      padding: 5px 0;
+      width: 120px; }
+  #boiteDeDialogue {
+    height: 100px; }
+  #tutoriel {
+    height: 450px; }
+    #tutoriel div {
+      height: 200px;
+      width: 100%; }
+  #ecranReussite {
+    font-size: 0.8em; }
+    #ecranReussite > a {
+      transform: scale(0.6);
+      width: 50%; }
+    #ecranReussite > div {
+      width: 50%; } }
+
+/* STRUCTURE LG */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #parcours1,
+  #ecranAccueil > div:first-child {
+    transform: scale(0.75); }
+  #boiteDeDialogue,
+  #tutoriel {
+    border: 3px solid #0070c0;
+    margin: 0 25%;
+    width: 50%; }
+    #boiteDeDialogue div,
+    #tutoriel div {
+      width: 65%; }
+    #boiteDeDialogue p,
+    #tutoriel p {
+      font-size: 1.2em;
+      line-height: 1.3em; }
+    #boiteDeDialogue button,
+    #tutoriel button {
+      color: #fff;
+      border: 2px solid #0070c0;
+      font-size: 1.2em;
+      margin: 5px;
+      padding: 5px 0;
+      width: 120px; }
+  #boiteDeDialogue {
+    height: 100px; }
+  #tutoriel {
+    height: 450px; }
+    #tutoriel div {
+      height: 200px;
+      width: 100%; }
+  #ecranReussite {
+    font-size: 0.9em; }
+    #ecranReussite > a {
+      transform: scale(0.8);
+      width: 50%; }
+    #ecranReussite > div {
+      width: 50%; } }
+
+/* STRUCTURE XL */
+@media (min-width: 1200px) {
+  #parcours1,
+  #ecranAccueil > div:first-child {
+    transform: scale(0.91); }
+  #boiteDeDialogue,
+  #tutoriel {
+    border: 3px solid #0070c0;
+    margin: 0 25%;
+    width: 50%; }
+    #boiteDeDialogue div,
+    #tutoriel div {
+      width: 65%; }
+    #boiteDeDialogue p,
+    #tutoriel p {
+      font-size: 1.2em;
+      line-height: 1.3em; }
+    #boiteDeDialogue button,
+    #tutoriel button {
+      color: #fff;
+      border: 2px solid #0070c0;
+      font-size: 1.2em;
+      margin: 5px;
+      padding: 5px 0;
+      width: 120px; }
+  #boiteDeDialogue {
+    height: 100px; }
+  #tutoriel {
+    height: 450px; }
+    #tutoriel div {
+      height: 200px;
+      width: 100%; } }
+
+/*# sourceMappingURL=styles-jeu.css.map */

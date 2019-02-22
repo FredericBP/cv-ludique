@@ -1,0 +1,26 @@
+/* BASE DU JEU VIDEO */
+@import 'base/base';
+
+/* MENU DU JEU */
+@import 'header/header';
+
+/* ECRAN D'ACCUEIL */
+@import 'homescreen/homescreen';
+
+/* NIVEAUX DU JEU */
+@import 'niveaux/niveaux';
+
+/* SPRITES DU JEU */
+@import 'sprites/sprites';
+
+/* OBJECTIFS DU JEU */
+@import 'objectifs/objectifs';
+
+/* ECRAN DE REUSSITE */
+@import 'reussite/reussite';
+
+/* ECRAN GAME OVER */
+@import 'gameover/gameover';
+
+/* RESPONSIVE DESIGN */
+@import 'structure/structure';

@@ -1,0 +1,16 @@
+#personnage {
+  position: absolute;
+  transition: 1000ms;
+  z-index: 30;
+}
+
+.masque {
+  height: 98px;
+  position: absolute;
+  overflow: hidden;
+  width: 43px;
+}
+
+.sprite {
+  position: absolute;
+}

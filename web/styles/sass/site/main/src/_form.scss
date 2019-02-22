@@ -1,0 +1,48 @@
+form {
+    margin: 0 auto;
+    max-width: 720px;
+    
+    div {
+        padding: 10px 0;
+    }
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input, textarea {
+    border: 1px solid $color1;
+    padding: 5px 0;
+    width: 100%;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type='submit'] {
+    display: block;
+    background-color: $color1;
+    color: $color6;
+    margin: 0 auto;
+    padding: 5px;
+    width: 250px;
+    
+    &:hover {
+        background-color: $color6;
+        color: $color1;
+        cursor: pointer;
+    }
+}
+
+.envoye {
+    color: #5cb85c;
+    text-align: center;
+}
+
+.erreur {
+    color: #d9534f;
+    text-align: center;
+}

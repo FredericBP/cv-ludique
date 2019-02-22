@@ -1,0 +1,30 @@
+/* COULEUR */
+$color1: #0070c0;
+$color2: #b9dbf3;
+$color3: #fafafa;
+$color4: #404040;
+$color5: #727272;
+$color6: #fff;
+
+$colorBackground: $color3;
+$colorHeader: $color1;
+$colorFooter: $color1;
+
+/* FONTS */
+@font-face {
+    font-family: "WeblySleek UI Semilight";
+    src: url(../fonts/weblysleekuisl.ttf);
+}
+
+@font-face {
+    font-family: "WeblySleek UI Light";
+    src: url(../fonts/weblysleekuil.ttf);
+}
+
+$font1: "WeblySleek UI Semilight", "Calibri Light", sans-serif;
+$font2: "WeblySleek UI Light", "Calibri Light", sans-serif;
+
+/* MORCEAUX CV */
+$hauteurH2MorceauxCv: 25px;
+$hauteurDivMorceauxCv: 604px;
+$hauteurMorceauxCv: $hauteurH2MorceauxCv + $hauteurDivMorceauxCv + 10px;

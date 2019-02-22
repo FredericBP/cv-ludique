@@ -1,0 +1,78 @@
+.morceauxCv {
+  bottom: 30px;
+  box-sizing: border-box;
+  height: $hauteurMorceauxCv;
+  left: 30px;
+  position: absolute;
+  transition: 1000ms;
+  width: 428px;
+  z-index: 45;
+  @include shadow;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  h2 {
+    background-color: $color1;
+    color: #fff;
+    font-weight: normal;
+    height: $hauteurH2MorceauxCv;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 1000ms;
+    width: 100%;
+  }
+
+  &>div {
+    background-color: #fff;
+    border: 2px solid $color1;
+    box-sizing: border-box;
+    height: $hauteurDivMorceauxCv;
+    position: relative;
+    transition: 1000ms;
+  }
+
+  img {
+    display: none;
+    width: 100%;
+  }
+
+  img:nth-child(1n+2) {
+    left: 0;
+    position: absolute;
+    bottom: 0;
+  }
+
+  img.obtenu {
+    display: inline-block;
+  }
+  
+  &.reduit {
+    box-sizing: border-box;
+    height: 194px;
+    transition: 1000ms;
+    width: 128px;
+
+    & h2 {
+      //display: none;
+      font-size: 0.9em;
+      height: 15px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 1000ms;
+      width: 100%;
+    }
+
+    &>div {
+      box-sizing: border-box;
+      height: 179px;
+      transition: 1000ms;
+      width: 100%;
+    }
+  }
+}

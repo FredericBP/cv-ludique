@@ -1,0 +1,32 @@
+#parcours1 {
+  background: url('../files/parcours-1a.png');
+  background-size: cover;
+  position: relative;
+  //max-height: 720px;
+  //max-width: 1280px;
+  /* @include shadow; */
+}
+
+img[src="web/files/parcours-1b.png"] {
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 40;
+}
+
+#lignes {
+  z-index: 10;
+}
+
+[id*="case"] {
+  position: absolute;
+  transform: scale(0.7);
+  transition: 500ms;
+  z-index: 20;
+}
+
+[id*="case"]:hover {
+  transform: scale(1);
+  transition: 500ms;
+}

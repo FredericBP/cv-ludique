@@ -1,0 +1,126 @@
+/* MENU GLOBAL */
+header {
+    background-color: $color3;
+    border: 3px solid $color1;
+    left: 40px;
+    position: absolute;
+    top: 40px;
+    z-index: 60;
+    @include shadow;
+}
+
+
+/* MENU OUVERT */
+header.ouvert {
+    height: calc(100vh - 85px);
+    transform: rotate(0deg);
+    transition: 500ms;
+    width: calc(100% - 85px);
+    
+    ul {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-left: 0;
+        
+        li {
+            display: list-item;
+            list-style-type: none;
+            margin: 3% 0;
+            transition: 1500ms;
+        }
+
+        li a,
+        #reprendrePartie,
+        .commencerPartie,
+        .revenirMenuPrincipal {
+            color: $color1;
+            cursor: pointer;
+            font-size: 2.5em;
+            text-decoration: none;
+            transition: 1500ms;
+        }
+
+        li a:hover,
+        #reprendrePartie:hover,
+        .commencerPartie:hover,
+        .revenirMenuPrincipal:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+/* MENU FERME */
+header.ferme {
+    height: 60px;
+    transform: rotate(-45deg);
+    transition: 500ms;
+    width: 60px;
+    
+    li {
+        display: none;
+        transition: 1500ms;
+    }
+}
+
+/* BOUTON MENU HAMBURGER POUR LE MENU FERME */
+header div {
+    height: 60px;
+    position: absolute;
+    width: 60px;
+    transform: rotate(45deg);
+    transition: 500ms;
+    
+    span {
+        background-color: $color1;
+        border-radius: 2px;
+        height: 4px;
+        position: absolute;
+        width: 40px;
+    }
+    
+    span:nth-child(1) {
+        left: 10px;
+        top: 14px;
+    }
+    
+    span:nth-child(2) {
+        left: 10px;
+        top: 28px;
+        display: inline;
+        transition: 500ms;
+    }
+    
+    span:nth-child(3) {
+        left: 10px;
+        top: 42px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/* BOUTON MENU HAMBURGER POUR LE MENU OUVERT */
+header.ouvert div {
+    span:nth-child(1) {
+        left: 10px;
+        top: 30px;
+    }
+    
+    span:nth-child(2) {
+        display: none;
+        transition: 500ms;
+    }
+    
+    span:nth-child(3) {
+        left: 10px;
+        top: 30px;
+        transform: rotate(-90deg);
+        transition: 500ms;
+    }
+}

@@ -1,0 +1,91 @@
+@media screen and (min-width : 600px) and (max-width : 791px) {
+    header {
+        min-height: 50px;
+        padding: 5px 0;
+        
+        /* MENU1 (BOUTON HAMBURGER) - LOGO - MENU0 (LANGUES) */
+        .flex2 {
+            align-items: center;
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            
+            img {
+                height: 50px;
+                vertical-align: middle;
+            }
+        }
+        
+        /* MENU 1 (PRINCIPAL) */
+        #menu1 {
+            display: none;
+            margin-top: 5px;
+            
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            li {
+                display: block;
+                font-size: 1.2em;
+                padding: 0;
+                
+                a {
+                    border-bottom: 5px solid $color1;
+                    
+                    &:hover {
+                        background-color: $color6;
+                        color: $color1;
+                    }
+                }
+            }
+        }
+        
+        #menu0>ul {
+            display: none;
+        }
+    }
+    
+    main {
+        margin: 15px auto;
+        width: 540px;
+    }
+    
+    .elementParcours {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        div {
+            border-left: 1px solid $color6;
+            border-top: 1px solid $color1;
+            padding: 10px;
+            width: 95%;
+        }
+    }
+    
+    footer {
+        padding: 5px;
+        
+        p {
+            margin: 25px 0;
+        }
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin: 25px 0;
+        }
+        
+        .credits {
+            li {
+                margin: 5px;
+                
+                &:nth-child(even) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

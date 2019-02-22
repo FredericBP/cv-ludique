@@ -1,0 +1,58 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  #parcours1,
+  #ecranAccueil>div:first-child {
+    // max-height: 541px;
+    // max-width: 962px;
+    transform: scale(0.75);
+  }
+
+  #boiteDeDialogue,
+  #tutoriel {
+    border: 3px solid #0070c0;
+    margin: 0 25%;
+    width: 50%;
+
+    div {
+      width: 65%;
+    }
+  
+    p {
+      font-size: 1.2em;
+      line-height: 1.3em;
+    }
+  
+    button {
+      color: #fff;
+      border: 2px solid #0070c0;
+      font-size: 1.2em;
+      margin: 5px;
+      padding: 5px 0;
+      width: 120px;
+    }
+  }
+
+  #boiteDeDialogue {
+    height: 100px;
+  }
+
+  #tutoriel {
+    height: 450px;
+    
+    div {
+      height: 200px;
+      width: 100%;
+    }
+  }
+
+  #ecranReussite {
+    font-size: 0.9em;
+
+    &>a {
+      transform: scale(0.8);
+      width: 50%;
+    }
+    &>div {
+      width: 50%;
+    }
+  }
+}

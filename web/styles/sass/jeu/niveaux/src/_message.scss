@@ -1,0 +1,48 @@
+#boiteDeDialogue {
+  align-items: center;
+  background-color: #fff;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  z-index: 50;
+  @include shadow;
+
+  #nomJoueur {
+    background-color: $color1;
+    color: #fff;
+    height: 25px;
+    left: -3px;
+    padding: 2px 0;
+    position: absolute;
+    text-align: center;
+    top: -29px;
+    width: 100px;
+    @include shadow;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  p {
+    margin: 0;
+    text-align: justify;
+  }
+
+  button {
+    background-color: #0070c0;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #0070c0;
+      cursor: pointer;
+    }
+  }
+}

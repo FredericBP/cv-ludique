@@ -1,0 +1,23 @@
+INITIALISATION RUBY VIA CMD
+
+PC fixe :
+
+s:
+cd S:\Programmation\web\serveur\frederic-debengy.name\prototype\web\styles
+sass --watch sass\styles-jeu.scss:styles-jeu.css
+
+
+PC portable :
+
+cd C:\Users\Onigirisama\Programmation\web\frederic-debengy.name\prototype\web\styles
+sass --watch sass\styles.scss:styles.css
+
+
+INITIALISATION NODE.JS VIA VISUAL STUDIO CODE
+
+cd S:\Programmation\web\serveur\frederic-debengy.name\prototype\web\styles
+cd prototype\web\styles
+
+node-sass -w --source-map true .\sass\styles-site.scss styles-site.css
+
+node-sass -w --source-map true .\sass\styles-jeu.scss styles-jeu.css

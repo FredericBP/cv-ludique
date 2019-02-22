@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134987066-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-134987066-1');
+        </script>
+        <meta charset="utf-8">
+        <meta name="description" content="165">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="web/files/favicon.ico">
+        <title>Frédéric DE BENGY PUYVALLEE</title>
+
+        <!-- INITIALISATION DU FICHIER CSS -->
+        <link rel="stylesheet" href="web/styles/styles-jeu.css">
+
+        <!-- INITIALISATION DES FICHIERS JAVASCRIPT -->
+        <script src="web/scripts/jeu-objectifs.js"></script>
+        <script src="web/scripts/jeu-parcours.js"></script>
+        <script src="web/scripts/jeu-evenements.js"></script>
+        <script src="web/scripts/jeu-joueur.js"></script>
+        <script src="web/scripts/jeu-initialisation.js"></script>
+        <script src="web/scripts/jeu-global.js"></script>
+    </head>
+    <body>
+        <!-- BOUTON MENU IN-GAME EN HAUT A GAUCHE EN COURS DE PARTIE -->
+        <header id="menu">
+            <div id="boutonMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li id="reprendrePartie">Reprendre la partie</li>
+                    <li class="commencerPartie">Recommencer le niveau</li>
+                    <li class="revenirMenuPrincipal">Revenir à l'écran d'accueil</li>
+                    <li><a href="parcours.html">Accéder au CV complet</a></li>
+                    <li><a href="web/files/cv-frederic-de-bengy.pdf">Télécharger mon CV au format PDF</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ECRAN ACCUEIL AVEC LE MENU PRINCIPAL -->
+        <div id="ecranAccueil">
+            <div id="imageParcoursAccueil">
+                <div></div>
+            </div>
+            <div id="menuPrincipal">
+                <div>
+                    <img src="web/files/logo-cv-ludique.png" alt="L'Aventurier du CV perdu">
+                    <div>
+                        <h2>MENU PRINCIPAL</h2>
+                        <nav>
+                            <ul>
+                                <li class="commencerPartie">Commencer le jeu</li>
+                                <li><a href="parcours.html">Accéder à mon CV complet</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div>
+                    <p>Jeu développé avec</p>
+                    <div>
+                        <img src="web/files/logo-01.png" alt="HTML5">
+                        <img src="web/files/logo-02.png" alt="CSS3">
+                        <img src="web/files/logo-03.png" alt="JavaScript">
+                        <img src="web/files/logo-04.png" alt="Sass">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NIVEAU 1 -->
+        <!-- ZONE DE JEU AFFICHANT LE PARCOURS, LE PERSONNAGE DU JOUEUR ET LES AUTRES ELEMENTS DU JEU EN COURS DE PARTIE -->
+        <div id="niveau1">
+            <div id="parcours1">
+                <img src="web/files/parcours-1b.png" alt="Parcours 1">
+                
+                <canvas id="lignes" width="1280" height="720"></canvas>
+                <canvas id="case1" width="35" height="25"></canvas>
+                <canvas id="case2" width="35" height="25"></canvas>
+                <canvas id="case3" width="35" height="25"></canvas>
+                <canvas id="case4" width="35" height="25"></canvas>
+                <canvas id="case5" width="35" height="25"></canvas>
+                <canvas id="case6" width="35" height="25"></canvas>
+                <canvas id="case7" width="35" height="25"></canvas>
+                <canvas id="case8" width="35" height="25"></canvas>
+                <canvas id="case9" width="35" height="25"></canvas>
+                <canvas id="case10" width="35" height="25"></canvas>
+                <canvas id="case11" width="35" height="25"></canvas>
+                <canvas id="case12" width="35" height="25"></canvas>
+
+                <div id="personnage" class="masque" >
+                    <img src="web/files/sprite-joueur.png" alt="Personnage du joueur" id="contenu" class="sprite"/>
+                </div>
+
+                <!-- <canvas id="mur" width="1280" height="720"></canvas> -->
+            </div>
+        </div>
+
+        <!-- CADRE EN BAS A GAUCHE AFFICHANT LA PROGRESSION DES MORCEAUX DE CV RETROUVES -->
+        <div id="morceauxCvDansNiveau" class="morceauxCv">
+            <h2>Morceaux du CV</h2>
+            <div class="reduit">
+                <img src="web/files/cv-morceau-1.png" alt="Morceau CV 1" class="morceauCv">
+                <img src="web/files/cv-morceau-2.png" alt="Morceau CV 2" class="morceauCv obtenu">
+                <img src="web/files/cv-morceau-3.png" alt="Morceau CV 3" class="morceauCv">
+                <img src="web/files/cv-morceau-4.png" alt="Morceau CV 4" class="morceauCv">
+                <img src="web/files/cv-morceau-5.png" alt="Morceau CV 5" class="morceauCv">
+                <img src="web/files/cv-morceau-6.png" alt="Morceau CV 6" class="morceauCv">
+            </div>
+        </div>
+
+        <!-- CADRE EN BAS A DROITE AFFICHANT LES OBJECTIFS -->
+        <div id="objectifs">
+            <h2>OBJECTIFS</h2>
+            <div>
+                <label for="score">Score : </label>
+                <p class="scoreNombre"></p>
+                <progress id="score"></progress>
+            </div>
+            
+            <div id="temps">
+                <p>Temps restant : </p>
+                <p><span id="tempsRestant"></span> secondes</p>
+            </div>
+
+            <div id="cv">
+                <p>Morceaux du CV retrouvés : </p>
+                <p><span id="cvRetrouves"></span>/6</p>
+            </div>
+
+            <div id="objetBonus">
+                <p>Objet bonus retrouvé : </p>
+                <p><span id="bonusRetrouve"></span>/1</p>
+            </div>
+
+            <div id="bonusDeplacements">
+                <p>Bonus déplacement : </p>
+                <p><span id="deplacementsEffectues"></span>/15</p>
+            </div>
+        </div>
+
+        <!-- ECRAN DE REUSSITE AFFICHE A LA FIN DU NIVEAU -->
+        <div id="ecranReussite">
+            <a href="web/files/cv-frederic-de-bengy.pdf">
+                <div class="morceauxCv">
+                    <img src="web/files/cv-morceau-1.png" alt="Morceau CV 1">
+                    <img src="web/files/cv-morceau-2.png" alt="Morceau CV 2">
+                    <img src="web/files/cv-morceau-3.png" alt="Morceau CV 3">
+                    <img src="web/files/cv-morceau-4.png" alt="Morceau CV 4">
+                    <img src="web/files/cv-morceau-5.png" alt="Morceau CV 5">
+                    <img src="web/files/cv-morceau-6.png" alt="Morceau CV 6">
+                </div>
+            </a>
+            <div>
+                <h2>NIVEAU TERMINE</h2>
+                <div id="scoreReussite">
+                    <p>SCORE OBTENU : <span class="scoreNombre"></span></p>
+                    <p>BONUS TEMPS ET DEPLACEMENTS : <span id="scoreBonus"></span></p>
+                    <p>SCORE TOTAL : <span id="scoreTotal"></span></p>
+                </div>
+                <p>Félicitations ! Vous avez réussi à retrouver tous les morceaux du CV de Frédéric !<br>Vous pouvez maintenant télécharger une version PDF du CV en cliquant dessus.</p>
+                <nav>
+                    <ul>
+                        <li class="commencerPartie">Refaire une partie</li>
+                        <li class="revenirMenuPrincipal">Revenir à l'écran d'accueil</li>
+                        <li><a href="parcours.html">Accéder à mon CV complet</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- ECRAN GAME OVER AFFICHE APRES UN ECHEC -->
+        <div id="ecranGameOver">
+            <h2>GAME OVER</h2>
+            <p>Vous n'avez malheureusement pas réussi à retrouver tous les morceaux du CV à temps...</p>
+            <nav>
+                <ul>
+                    <li class="commencerPartie">Rééssayer</li>
+                    <li class="revenirMenuPrincipal">Revenir à l'écran d'accueil</li>
+                    <li><a href="parcours.html">Accéder à mon CV complet</a></li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>

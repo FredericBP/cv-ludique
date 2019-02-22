@@ -1,0 +1,120 @@
+main {
+    background-color: $color3;
+}
+
+h1 {
+    background-color: $color1;
+    @include shadow;
+    color: $color6;
+    padding: 5px;
+    text-align: center;
+}
+
+#telechargement-pdf {
+    background-color: $color1;
+    border: 3px solid $color1;
+    display: block;
+    color: $color6;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include shadow;
+}
+
+#telechargement-pdf:hover {
+    background-color: #fff;
+    color: $color1;
+    border: 3px solid $color1;
+}
+
+section {
+    margin-bottom: 25px;
+    background-color: $color6;
+    border: 2px solid $color1;
+    @include shadow;
+    
+    h2 {
+        background-color: $color1;
+        color: $color6;
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    h3 {
+        border-bottom: 1px solid $color1;
+        text-align: center;
+    }
+    
+    .url {
+        text-align: center;
+        
+        a {
+            color: $color1;
+        }
+    }
+    
+    &>div {
+        padding: 10px;
+        
+        &>img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            max-height: 200px;
+        }
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        margin-left: 30px;
+        
+        &::before {
+            color: $color1;
+            content: "\2022";
+            display: inline-block;
+            font-size: 25px;
+            margin-left: -1em;
+            position: relative;
+            text-align: center;
+            top: 3px;
+            width: 1em;
+        }
+    }
+
+    img[src*="logo-bleu.png"] {
+        width: 150px;
+        margin: 60px 0;
+    }
+
+    iframe {
+        border: 1px solid $color1;
+        height: 340px;
+        width: 100%;
+    }
+}
+
+.elementParcours {
+    align-items: center;
+    display: flex;
+    
+    img {
+        padding: 0 30px 0 20px;
+    }
+    
+    div {
+        border-left: 1px solid $color1;
+        padding: 30px 0 30px 30px;
+        
+        p:first-child {
+            color: $color1;
+            padding-bottom: 5px;
+        }
+    }
+}

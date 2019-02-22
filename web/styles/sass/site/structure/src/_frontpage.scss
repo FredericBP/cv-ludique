@@ -1,0 +1,30 @@
+.buttonHome {
+    display: flex;
+}
+
+.buttonCv, .buttonPortfolio {
+    background-color: $color1;
+    @include shadow;
+    font-size: 2em;
+    height: 200px;
+    width: 50%;
+    
+    a {
+        align-items: center;
+        display: flex;
+        color: $color6;
+        height: 100%;
+        justify-content: center;
+        text-decoration: none;
+        width: 100%;
+        
+        &:hover {
+            background-color: $color6;
+            color: $color1;
+        }
+    }
+}
+
+.buttonCv {
+    margin-right: 10px;
+}

@@ -1,0 +1,99 @@
+#ecranReussite {
+  align-items: center;
+  background-color: $color1;
+  display: flex;
+  height: calc(100vh - 30px);
+  justify-content: space-around;
+  text-align: center;
+
+  &>a,
+  &>div {
+    width: 50%;
+  }
+
+  &>a {
+    width: 428px;
+  }
+
+  &>div:last-child {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    // height: calc(100vh - 30px);
+    justify-content: center;
+  }
+
+  .morceauxCv {
+    background-color: #fff;
+    border: 2px solid $color1;
+    box-sizing: border-box;
+    height: $hauteurDivMorceauxCv;
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    img {
+      display: inline-block;
+    }
+
+    img:nth-child(1n+2) {
+      left: 0;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  
+  h2 {
+    color: #fff;
+    font-size: 4.5em;
+  }
+
+  #scoreReussite {
+    color: #fff;
+    text-align-last: center;
+    text-indent: 20px;
+    width: 100%;
+
+    p {
+      font-size: 1.6em;
+    }
+
+    p:last-child {
+      font-size: 2em;
+    }
+  }
+
+  p {
+    color: #fff;
+    font-size: 1.5em;
+  }
+  
+  ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: list-item;
+    list-style-type: none;
+    margin: 3% 0;
+  }
+  
+  li a,
+  .commencerPartie,
+  .revenirMenuPrincipal {
+    color: #fff;
+    font-size: 2.5em;
+    text-decoration: none;
+  }
+
+  li a:hover,
+  .commencerPartie:hover,
+  .revenirMenuPrincipal:hover {
+    cursor: pointer;
+  }
+}
